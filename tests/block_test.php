@@ -56,8 +56,9 @@ final class block_test extends \advanced_testcase {
     protected function tearDown(): void {
         global $DB;
         $prefix = $DB->get_prefix() . 'report_sql_v_';
+        $schemafunction = $DB->get_dbfamily() === 'postgres' ? 'current_schema()' : 'DATABASE()';
         $views = $DB->get_records_sql(
-            "SELECT table_name FROM information_schema.views WHERE table_schema = DATABASE() AND table_name LIKE ?",
+            "SELECT table_name FROM information_schema.views WHERE table_schema = {$schemafunction} AND table_name LIKE ?",
             [$prefix . '%']
         );
         foreach ($views as $view) {
