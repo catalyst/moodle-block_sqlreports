@@ -56,6 +56,7 @@ $string['modetable'] = 'Table';
 $string['norows'] = 'No data to show.';
 $string['notconfigured'] = 'Edit this block and choose a report to display.';
 $string['pluginname'] = 'SQL report';
+$string['privacy:metadata'] = 'The SQL report block only displays data stored in other locations.';
 $string['report'] = 'Report';
 $string['report_help'] = 'The published report to show in this block. Only published reports are listed. Each viewer still sees only the rows the report itself allows them to see (for example, only the courses they teach). On a course page the block is limited to that course; the "View full report" link opens the complete report without that course limit.';
 $string['roles'] = 'Show only to roles';
