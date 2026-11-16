@@ -29,7 +29,7 @@ $plugin->release      = '0.2.0';
 $plugin->version      = 2026090301;
 $plugin->requires     = 2024100100; // Moodle 4.5+ for stable Reportbuilder API.
 $plugin->maturity     = MATURITY_ALPHA;
-$plugin->supported    = [405, 502];
+$plugin->supported    = [405, 503];
 $plugin->dependencies = [
     // See https://github.com/marcusgreen/report_sql — chart_svg server-side SVG renderer.
     'report_sql' => 2026080300,
